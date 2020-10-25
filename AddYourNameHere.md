@@ -8,4 +8,6 @@ Hannela
 Raina
 Jada
 Irene
+Barbara
+Catalina
 Karen
