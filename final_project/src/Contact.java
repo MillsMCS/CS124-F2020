@@ -1,5 +1,3 @@
-package final_project;
-
 import java.util.HashMap;
 
 public class Contact {
@@ -33,6 +31,6 @@ public class Contact {
 	}//setNumber
 	
 	public String toString() {
-		return myName + ", " + myNumber;
+		return myNumber;
 	}
 }//Contact

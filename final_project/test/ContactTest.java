@@ -1,7 +1,6 @@
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import final_project.Contact;
 import static org.junit.Assert.assertEquals;
 
 public class ContactTest {
