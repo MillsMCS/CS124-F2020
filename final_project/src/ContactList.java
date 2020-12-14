@@ -40,7 +40,6 @@ public class ContactList {
 	 * Running time: O(1)
 	 * Analysis: returns the name of the person searched if found, if not found, return null;
 	 */
-
 	public Contact findName(String name) {
 		if(theList.containsKey(name)) {
 			//System.out.print("Found: " + name + "\n");
@@ -54,7 +53,6 @@ public class ContactList {
 	 * Running time: O(1)
 	 * Analysis: returns the number of the person searched if found, if not found, return null;
 	 */
-
 	public Contact findNumber(String number) {
 		if(theNums.containsKey(number)) {
 			return theNums.get(number);
@@ -66,7 +64,6 @@ public class ContactList {
 	 * Running time: O(1)
 	 * Analysis: deletes the person with the nameOrNumber passed through;
 	 */
-
 	public void delete(String nameORnumber) {
 		if(theList.containsKey(nameORnumber)) {
 			theList.remove(nameORnumber);
@@ -83,7 +80,6 @@ public class ContactList {
 	 * Running time: O(1)
 	 * Analysis: returns the size of the theList;
 	 */
-
 	public int size() {
 		return theList.size();
 	}//size
@@ -92,7 +88,6 @@ public class ContactList {
 	 * Running time: O(n log n)
 	 * Analysis: returns the names of everyone in the list, sorted by name;
 	 */
-
 	public void printAllContacts() {
 		TreeMap<String, Contact> temp = new TreeMap<>(theList);
 		System.out.println("unsorted:" + theList);
@@ -108,7 +103,6 @@ public class ContactList {
 	 * Running time: O(n log n)
 	 * Analysis: returns the name and number of the person passed through in the parameter;
 	 */
-
 	public void searchAllContacts(String target) {
 		//is target string in the key
 		for(Map.Entry<String, Contact> entry : theList.entrySet()) {
